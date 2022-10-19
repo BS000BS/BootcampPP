@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* definimi variablave */
+:root {
+    --variabla1: greenyellow;
+}
+
+body {
+    background-color: grey;
+}
+
+p:nth-child(2n) {
+    /* perdorimi variablave */
+    color: var(--variabla1);
+}
+
+.container {
+    margin: auto 15%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main {
+    box-shadow: 5px 0px 15px white,
+                -5px 0px 15px white;
+    padding: 20px;
+    height: 100vh;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+.b-sh {
+    margin: 50px auto;
+    box-shadow: 8px 8px 8px #555;
+}
+
+.diagonal-box-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-bottom: 50px;
+}
+
+.diagonal-box1, .diagonal-box2 {
+    width: 50px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(50deg);
+}
+
+.diagonal-box1 {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    transform: rotate(50deg);
+    box-shadow: 15px 0px 35px white;
+}
+
+.diagonal-box2 {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    transform: rotate(-50deg);
+    box-shadow: -15px 0px 35px white;
+}
+
+h3 + h4 {
+    color: white;
+}
+
+h3 ~ h4 {
+    word-spacing: 20px;
+}
